@@ -4,28 +4,43 @@ import axios from 'axios';
 import {API_KEY,API_URL,LeagueT} from "../constants/apiConstans";
 
  class leagueTable extends React.Component{
-  constructor(props) {
+   constructor(props) {
     super(props);
     this.state = {
-      imageURL: '',
+      leagueTable: [],
+      name: undefined,
+      position : undefined
     }
   }
   componentDidMount() {
     axios.get(`${API_URL}${LeagueT}key=${API_KEY}&league_id=${LeagueId}`)
-    .then(response => {
-      this.setState({ imageURL: response.data.message });
-      console.log(response)
-    })
-    .catch(error => {
-      console.log(error);
-    });
+    .then(response =>
+      response.data.data.league_table.map(league => ({
+        name: `${league.name}`,
+        position: `${league.position}`,
+      }))
+    )
+      .then(leagueTable => {
+        this.setState({
+          leagueTable
+        })
+      })
   }
   render() {
-    const { imageURL } = this.state;
+    const { leagueTable} = this.state;
     return (
-      <p>{imageURL}</p>
+      leagueTable.map(league =>{
+        const {name,position} = league;
+        return(
+          <div key = {name}>
+            <p>{name}</p>
+            <p>{position}</p>
+          </div>
+        );
+      })
     );
   }
 }
 
 export default leagueTable
+
