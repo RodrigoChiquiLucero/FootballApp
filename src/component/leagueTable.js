@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import axios from 'axios';
-import {API_KEY,API_URL,LeagueT} from "../constants/apiConstans";
+import {API_KEY,API_URL,LeagueT,LeagueId} from "../constants/apiConstans";
 
  class leagueTable extends React.Component{
    constructor(props) {
