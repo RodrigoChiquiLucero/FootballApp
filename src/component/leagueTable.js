@@ -33,8 +33,20 @@ import {API_KEY,API_URL,LeagueT} from "../constants/apiConstans";
         const {name,position} = league;
         return(
           <div key = {name}>
-            <p>{name}</p>
-            <p>{position}</p>
+            <table size = "small">
+              <thead>
+                <tr>
+                  <th>Name Team</th>
+                  <th> Position</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{name}</td>
+                  <td>{position}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         );
       })
