@@ -18,12 +18,18 @@ class App extends React.Component {
         points: `${league.points}`,
         position: `${league.position}`,
         matchesPlayed: `${league.matchesPlayed}`,
-        seasonWins_overall: `${league.seasonWins_overall}`
+        seasonWins_home: `${league.seasonWins_home}`,
+        seasonWins_away: `${league.seasonWins_away}`,
+        seasonDraws_home: `${league.seasonDraws_home}`,
+        seasonDraws_away: `${league.seasonDraws_away}`,
+        seasonLosses_away: `${league.seasonLosses_away}`,
+        seasonLosses_home: `${league.seasonLosses_home}`,
+        seasonGoalDifference : `${league.seasonGoalDifference}`,
       }))
     )
       .then(leagueTable => {
         this.setState({
-          leagueTable
+          leagueTable,
         })
       })
   }
@@ -31,7 +37,13 @@ class App extends React.Component {
     const { leagueTable} = this.state;
     return (
       leagueTable.map(league =>{
-        const {name,points,position,matchesPlayed, seasonWins_overall} = league;
+        const {name,points,position,matchesPlayed,seasonWins_home, seasonWins_away
+          ,seasonDraws_home,seasonDraws_away, seasonLosses_home,
+          seasonLosses_away,seasonGoalDifference} = league;
+        let totalWins = Number(seasonWins_home) + Number(seasonWins_away);
+        let totalDraws = Number(seasonDraws_home) + Number(seasonDraws_away);
+        let totalLosses = Number(seasonLosses_home) + Number(seasonLosses_away);
+
         return(
           <div key = {name}>
             <table size = "small">
@@ -41,7 +53,10 @@ class App extends React.Component {
                   <th>Team Name</th>
                   <th>Points</th>
                   <th>matches Played</th>
-                  <th>GC</th>
+                  <th>PG</th>
+                  <th>PE</th>
+                  <th>PP</th>
+                  <th>DF</th>
                 </tr>
               </thead>
               <tbody>
@@ -50,7 +65,10 @@ class App extends React.Component {
                   <td>{name}</td>
                   <td>{points}</td>
                   <td>{matchesPlayed}</td>
-                  <td>{ seasonWins_overall}</td>
+                  <td>{totalWins}</td>
+                  <td>{totalDraws}</td>
+                  <td>{totalLosses}</td>
+                  <td>{seasonGoalDifference}</td>
                 </tr>
               </tbody>
             </table>
