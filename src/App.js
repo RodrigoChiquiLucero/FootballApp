@@ -1,18 +1,14 @@
 import React from 'react';
 import './App.css';
-import LeagueTable from './component/LeagueTable';
 import LeagueMatches from './component/LeagueMatches'
 
 class App extends React.Component {
-
-  render()
-  {
+  render() {
     return(
-      <div className = 'hola'>
-      <LeagueTable />
-      <LeagueMatches />
+      <div className= "hi">
+        <LeagueMatches />
       </div>
-    );
-  }
+    )
+  };
 }
 export default App;

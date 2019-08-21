@@ -14,6 +14,7 @@ class LeagueMatches extends React.Component {
     axios.get(`${API_URL}${LeagueM}key=${API_KEY}&league_id=${LeagueId}`)
       .then(response =>
         response.data.data.map(matches => ({
+          gameId : `${matches.id}`,
           home: `${matches.home_name}`,
           away: `${matches.away_name}`,
           gameWeek : `${matches.game_week}`,
@@ -31,9 +32,32 @@ class LeagueMatches extends React.Component {
   }
 
   render() {
+    const { leagueMatches} = this.state;
     return(
-      <p> hola</p>
-    )
+      leagueMatches.map(matches => {
+        const {home,away,gameWeek,homeGoals,awayGoals,stadium,gameId} = matches;
+        return(
+          <div key={gameId}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Game Week : {gameWeek}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{home}</td>
+                  <td>{homeGoals}</td>
+                  <td>{awayGoals}</td>
+                  <td>{away}</td>
+                  <td>{stadium}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        );
+      })
+    );
   };
 }
 
