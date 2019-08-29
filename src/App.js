@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
 import './style/TableMatches.css';
 import './style/TableLeague.css';
-import LeagueMatches from './component/LeagueMatches'
-import LeagueTable from './component/LeagueTable'
+import LeagueMatches from './component/LeagueMatches';
+import LeagueTable from './component/LeagueTable';
+
 class App extends React.Component {
   render() {
     return(

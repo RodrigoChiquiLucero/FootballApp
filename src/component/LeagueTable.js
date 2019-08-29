@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import axios from 'axios';
 import {API_KEY,API_URL,LeagueT,LeagueId} from "../constants/apiConstans";
+import LeagueTableRow from "./LeagueTableRow";
 
  class LeagueTable extends React.Component{
    constructor(props) {
@@ -38,45 +39,23 @@ import {API_KEY,API_URL,LeagueT,LeagueId} from "../constants/apiConstans";
   render() {
      const { leagueTable} = this.state;
      return (
-       leagueTable.map(league =>{
-         const {name,points,position,matchesPlayed,seasonWins_home, seasonWins_away
-           ,seasonDraws_home,seasonDraws_away, seasonLosses_home,
-           seasonLosses_away,seasonGoalDifference} = league;
-         let totalWins = Number(seasonWins_home) + Number(seasonWins_away);
-         let totalDraws = Number(seasonDraws_home) + Number(seasonDraws_away);
-         let totalLosses = Number(seasonLosses_home) + Number(seasonLosses_away);
-
-         return(
-           <div key = {name}>
-             <table>
+           <div key = {"random"}>
+             <table class="table table-sm table-dark">
                <thead>
-               <tr>
-                 <th>#</th>
-                 <th>Team Name</th>
-                 <th>Points</th>
-                 <th>matches Played</th>
-                 <th>PG</th>
-                 <th>PE</th>
-                 <th>PP</th>
-                 <th>DF</th>
-               </tr>
-               </thead>
-               <tbody>
-               <tr>
-                 <td>{position}</td>
-                 <td>{name}</td>
-                 <td>{points}</td>
-                 <td>{matchesPlayed}</td>
-                 <td>{totalWins}</td>
-                 <td>{totalDraws}</td>
-                 <td>{totalLosses}</td>
-                 <td>{seasonGoalDifference}</td>
-               </tr>
-               </tbody>
+                <tr>
+                  <th>#</th>
+                  <th>Team Name</th>
+                  <th>Points</th>
+                  <th>Matches Played</th>
+                  <th>PG</th>
+                  <th>PE</th>
+                  <th>PP</th>
+                  <th>DF</th>
+                </tr>
+                </thead>
+               {leagueTable.map(league => <LeagueTableRow league={league} />) }
              </table>
            </div>
-         );
-       })
      );
    }
  }
