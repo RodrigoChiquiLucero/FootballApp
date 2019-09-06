@@ -39,8 +39,8 @@ import LeagueTableRow from "./LeagueTableRow";
   render() {
      const { leagueTable} = this.state;
      return (
-           <div key = {"random"}>
-             <table class="table table-sm table-dark">
+
+             <table className="table table-sm table-dark">
                <thead>
                 <tr>
                   <th>#</th>
@@ -53,9 +53,8 @@ import LeagueTableRow from "./LeagueTableRow";
                   <th>DF</th>
                 </tr>
                 </thead>
-               {leagueTable.map(league => <LeagueTableRow league={league} />) }
+               {leagueTable.map(league => <LeagueTableRow league={league} key={league.name}/>)}
              </table>
-           </div>
      );
    }
  }

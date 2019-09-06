@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e966e19-9e7f-40b5-b247-85677ef24972" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/LeagueTableRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/LeagueTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeagueTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/LeagueTableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeagueTableRow.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +117,11 @@
       <workItem from="1566962687664" duration="290000" />
       <workItem from="1566963116192" duration="143000" />
       <workItem from="1566963334647" duration="3236000" />
-      <workItem from="1567084229272" duration="915000" />
+      <workItem from="1567084229272" duration="1818000" />
+      <workItem from="1567135986164" duration="604000" />
+      <workItem from="1567705780461" duration="204000" />
+      <workItem from="1567706227895" duration="209000" />
+      <workItem from="1567790156967" duration="1315000" />
     </task>
     <task id="LOCAL-00001" summary="Ya devuelvo todos los elementos del arreglo de la API">
       <created>1565922835223</created>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566928512485</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Esta acomodada la tabla">
+      <created>1567085345871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567085345871</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -231,6 +237,7 @@
     <MESSAGE value="Ya conectada la api por la parte api con los partidos de cada semana" />
     <MESSAGE value="Ya muestro todos los partidos de toda la semana, ahora empieza lo divertido jejex saludos" />
     <MESSAGE value="Empezando a pensar un poquito sobre el estilo que va a tener en terminos MUY generales" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empezando a pensar un poquito sobre el estilo que va a tener en terminos MUY generales" />
+    <MESSAGE value="Esta acomodada la tabla" />
+    <option name="LAST_COMMIT_MESSAGE" value="Esta acomodada la tabla" />
   </component>
 </project>

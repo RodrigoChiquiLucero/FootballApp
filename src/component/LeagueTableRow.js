@@ -8,7 +8,8 @@ class LeagueTableRow extends React.Component {
     let totalLosses = Number(this.props.league.seasonLosses_home) + Number(this.props.league.seasonLosses_away);
 
     return (
-      <tbody>
+        <tbody>
+        <tr>
           <th>{this.props.league.position}</th>
           <th>{this.props.league.name}</th>
           <td>{this.props.league.points}</td>
@@ -17,7 +18,8 @@ class LeagueTableRow extends React.Component {
           <td>{totalDraws}</td>
           <td>{totalLosses}</td>
           <td>{this.props.league.seasonGoalDifference}</td>
-      </tbody>
+        </tr>
+        </tbody>
     )
   }
 }
