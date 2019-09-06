@@ -39,7 +39,6 @@ import LeagueTableRow from "./LeagueTableRow";
   render() {
      const { leagueTable} = this.state;
      return (
-
              <table className="table table-sm table-dark">
                <thead>
                 <tr>

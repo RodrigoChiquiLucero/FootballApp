@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/LeagueTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeagueTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/LeagueTableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeagueTableRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/TableMatches.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/TableMatches.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +122,7 @@
       <workItem from="1567135986164" duration="604000" />
       <workItem from="1567705780461" duration="204000" />
       <workItem from="1567706227895" duration="209000" />
-      <workItem from="1567790156967" duration="1315000" />
+      <workItem from="1567790156967" duration="2254000" />
     </task>
     <task id="LOCAL-00001" summary="Ya devuelvo todos los elementos del arreglo de la API">
       <created>1565922835223</created>
@@ -186,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567085345871</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Acomodando un par de errores que salian en al consola. Agregue key a c/elemento de la tabla.">
+      <created>1567791604487</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567791604487</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -238,6 +246,7 @@
     <MESSAGE value="Ya muestro todos los partidos de toda la semana, ahora empieza lo divertido jejex saludos" />
     <MESSAGE value="Empezando a pensar un poquito sobre el estilo que va a tener en terminos MUY generales" />
     <MESSAGE value="Esta acomodada la tabla" />
-    <option name="LAST_COMMIT_MESSAGE" value="Esta acomodada la tabla" />
+    <MESSAGE value="Acomodando un par de errores que salian en al consola. Agregue key a c/elemento de la tabla." />
+    <option name="LAST_COMMIT_MESSAGE" value="Acomodando un par de errores que salian en al consola. Agregue key a c/elemento de la tabla." />
   </component>
 </project>
